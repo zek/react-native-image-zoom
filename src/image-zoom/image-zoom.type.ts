@@ -114,7 +114,7 @@ export class Props {
   /**
    * 单击的回调
    */
-  public onClick?: (eventParams: IOnClick) => void = () => {
+  public onClick?: () => void = () => {
     //
   };
 
