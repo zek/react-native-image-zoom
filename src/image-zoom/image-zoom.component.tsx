@@ -33,7 +33,7 @@ export default class ImageZoom extends React.Component<Props, State> {
   private zoomCurrentDistance = 0
 
   // 图片手势处理
-  private imagePanResponder: PanResponderInstance = null;
+  private imagePanResponder: any;
 
   // 图片视图当前中心的位置
   // private centerX: number
@@ -469,7 +469,7 @@ export default class ImageZoom extends React.Component<Props, State> {
         ) {
           this.singleClickTimeout = setTimeout(() => {
             if (this.props.onClick) {
-              this.props.onClick(evt)
+              this.props.onClick()
             }
           }, this.props.doubleClickInterval)
         } else {
